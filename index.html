@@ -16,6 +16,8 @@
 
   <!-- MAIN STYLE -->
   <link rel="stylesheet" href="css/tooplate-style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
   <!-- <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
 
@@ -25,7 +27,8 @@
 <body>
 
   <!-- MENU -->
-  <nav class="navbar navbar-expand-sm navbar-light">
+  <nav class="navbar navbar-expand-sm navbar-light"  data-aos="fade-up"
+  data-aos-duration="3000">
     <div class="container">
       <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> Angélot</a>
 
@@ -64,8 +67,8 @@
     </div>
   </nav>
 
-  <!-- ABOUT -->
-  <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+  <!-- Banner -->
+  <section class="about full-screen d-lg-flex justify-content-center align-items-center" data-aos="zoom-out-left" id="about">
     <div class="container">
       <div class="row">
 
@@ -103,7 +106,7 @@
   </section>
 
   <!-- PROJECTS -->
-  <section class="project py-5" id="project">
+  <section class="project py-5" id="project" data-aos="zoom-out-right">
     <div class="container">
 
       <div class="row">
@@ -153,11 +156,11 @@
   </section>
 
   <!-- FEATURES -->
-  <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+  <section class="resume py-5 d-lg-flex justify-content-center align-items-center" data-aos="zoom-in-right" id="resume">
     <div class="container">
       <div class="row">
 
-        <div class="col-lg-6 col-12">
+        <div class="col-lg-6 col-12" data-aos="fade-down-left">
           <h2 class="mb-4">Technologies & Compétences</h2>
 
           <div class="timeline">
@@ -216,7 +219,7 @@
           </div>
         </div>
 
-        <div class="col-lg-6 col-12">
+        <div class="col-lg-6 col-12" data-aos="fade-down-left">
           <!-- <h2 class="mb-4 mobile-mt-2">Educations</h2> -->
           <br><br><br>
           <div class="timeline">
@@ -277,7 +280,9 @@
   </section>
 
   <!-- CONTACT -->
-  <section class="contact py-5" id="contact">
+  <section class="contact py-5" id="contact" data-aos="fade-right"
+  data-aos-offset="300"
+  data-aos-easing="ease-in-sine">
     <div class="container">
       <div class="row">
 
@@ -331,7 +336,7 @@
                 </div>
 
                 <div class="col-12">
-                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Votre Message ici..."></textarea>
+                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Votre Message ici..." style="resize: none;"></textarea>
                 </div>
 
                 <div class="ml-lg-auto col-lg-5 col-12">
@@ -347,7 +352,7 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer py-5">
+  <footer class="footer py-5" data-aos="fade-zoom-in">
     <div class="container">
       <div class="row">
 
@@ -369,8 +374,11 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/smoothscroll.js"></script>
   <script src="js/custom.js"></script>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 
   <script type="text/javascript">
